@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;600;700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+body{
+    padding-left: 5%;
+    padding-right:5%;
+}
+
+.flexbox-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.flexbox-item{
+    min-width: 30%;
+    /*border: 3px solid #000;*/
+    /*background-color: rgb(217, 250, 215);*/
+    margin: 10px;
+    overflow: hidden;
+}
+.flexbox-item-0{
+    min-height: 200px;
+}
+.flexbox-item-1{
+    min-height: 200px;
+}
+.flexbox-item-2{
+    min-height: 200px;
+}
+.flexbox-item-3{
+    min-height: 200px;
+}
+.flexbox-item-4{
+    min-height: 200px;
+}
+/*Information Card*/
+.row{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.profile-img img{
+	max-width: 175px;
+	height: auto;
+	border-radius: 50%;
+    border: 5px solid #FCF6F6;
+}
+.profile-info{
+    /*background-color: #014D6F;*/
+    min-height: 150px;
+    width: 100%;
+    border-radius: 8%;
+    border: 5px solid #FCF6F6;
+    margin: auto;
+    margin-left: -55px;
+   
+}
+.profile-info h3{
+    padding: 15px;
+    padding-left: 50px;
+    font-size: 16px;
+    word-wrap: break-word;
+}
+.profile-info p{
+    padding-bottom: 5px;
+    padding-left: 55px;
+    word-wrap: break-word;
+    font-size: 12px;
+}
+
+
+/* Banner*/
+.banner{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    align-items: content;
+    padding: 20px;
+}
+.college{
+    background: var(--bg-color);
+    padding: 20px;
+    margin: auto;
+    margin-left: 50px;
+    flex-direction: row;
+}
+.college h1{
+    text-align: center;
+    font-size: 4.5vw;
+}
+.college p{
+    text-align: center;
+    font-size: 2.5vw;
+}
+.college-logo img{
+    max-height: 250px;
+    max-width: 250px;
+    margin-left: -60px;
+}
+.col-10{
+    padding: 15px;
+    flex-basis: 83.33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.col-10 p{
+    padding: 0px;
+}
+.col-12{
+    flex-basis: 16.66%;
+}
+/*Organization Description*/
+.title{
+    font-weight: 900;
+    padding-top: 20px;
+}
+.m-container h3{
+    color: black;
+    padding-top: 20px !important;
+    margin: 0;
+    text-align: center;
+}
+.sm-container{
+    margin:10px;
+    padding-left:100px;
+    padding-right: 100px;
+    padding-bottom: 20px;
+}
+.m-container{
+    margin: 0;
+}
+.org-description{
+    text-indent: 80px;
+    line-height: 1.5;
+    font-size: 19px;
+    text-align: justify;
+    color: black;
+}
+.box{
+    padding:0px 25px;
+}
+#goal{
+    text-align: justify;
+    text-indent: 0;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: black;
+}
+.li-color{
+    color: black;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+/**/
+@media only screen and (min-width:1024px) and (max-width: 1256px) {
+    .college h1{
+        font-size: 4.5vw;
+    }
+    .college p{
+        font-size: 2vw;
+    }
+}
+@media only screen and (min-width:713px) and (max-width: 996px) {   
+    body{
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    .sm-container{
+        margin:10px;
+        padding-left:25px;
+        padding-right: 25px;
+        padding-bottom: 10px;
+    }
+    .banner{
+        padding: 10px;
+    }
+    .college-logo img{
+        max-height: 150px;
+        max-width: 150px;
+        margin-left: -50px;
+    }
+}
+@media only screen and (min-width:468px) and (max-width: 712px) {
+    body{
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    .sm-container{
+        margin:10px;
+        padding-left:15px;
+        padding-right: 15px;
+        padding-bottom: 10px;
+    }
+    .banner{
+        padding: 10px;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+    .college-logo img{
+        max-height: 150px;
+        max-width: 150px;
+        margin-left: -10px;
+    }
+    .col-10{
+        padding: 0;
+    }
+    .college{
+        padding: 10px;
+        margin-top: 10px;
+        margin-left: 10px;
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 200px) and (max-width: 467px){
+    *{
+        font-size: 14px;
+    }
+    
+    body{
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+    .banner{
+        padding: 5px;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+    .sm-container{
+        margin:0;
+        padding-left:15px;
+        padding-right: 15px;
+        padding-bottom: 10px;
+    }
+    .college-logo img{
+        max-height: 90px;
+        max-width: 90px;
+        margin-left: -10px;
+    }
+    .college{
+        background: var(--bg-color);
+        padding: 10px;
+        margin-top: 10px;
+        margin-left: 20px;
+        width: 90%;
+    }
+    .org-description{
+        font-size: 14px;
+    }
+    .box{
+        padding-left:10px;
+        padding-right: 10px;
+    }
+    .m-container h3{
+        text-align: left;
+        text-indent: 0;
+    }
+}
